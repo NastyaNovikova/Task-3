@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //ApplicationContext представляет собой Spring IoC контейнер и необходим для инициализации, настройки и сборки бинов для построения приложения.
         ApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(AppConfig.class);
         for (int i = 0; i < 5; i++) {
